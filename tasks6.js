@@ -1,8 +1,8 @@
-var arr = [];
-while (arr.length < 10){
-	arr[arr.length] = Math.floor(Math.random()* (100-1+1)+1);
+var str =  'var_test_text';
+var arr = str.split('_');
 
+for (var i = 0; i < arr.length; i++){
+	arr[i] = arr[i].slice(0, 1).toUpperCase() + arr[i].slice(1);
 }
-document.write(arr);
-
-
+var result = arr.join('');
+document.write(result);

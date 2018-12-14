@@ -11,4 +11,14 @@ function fancRecursion() {
 		fancRecursion();
 	}
 }
-fancRecursion();
+
+var arr = [1, 2, 3, 4, 5];
+
+function last(arr) {
+	document.write(arr.pop() + '<br>');
+	if (arr.length > 0){
+		last(arr);
+	}
+}
+
+last(arr);

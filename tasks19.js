@@ -1,8 +1,10 @@
+/*
 function func(num) {
 	num = num || 3;
 	return num * num;
 }
-
+*/
+/*
 var i = 0;
 
 function fancRecursion() {
@@ -11,7 +13,8 @@ function fancRecursion() {
 		fancRecursion();
 	}
 }
-
+*/
+/*
 var arr = [1, 2, 3, 4, 5];
 
 function last(arr) {
@@ -20,6 +23,7 @@ function last(arr) {
 		last(arr);
 	}
 }
+*/
 /*
 var arr1 = [1,2,3,4,5,6,7,8,9,0];
 
@@ -46,3 +50,13 @@ function recNum(arr) {
 
 recNum(arr2);
 */
+
+var num = 123;
+
+var arr = String(num).split('');
+var sum = 0;
+for (var i = 0; i < arr.length; i++){
+        sum += Number(arr[i]);
+}
+
+console.log(sum);

@@ -22,4 +22,24 @@ for (var i = 1; i <= 100; i++){
 }
 */
 
-// tasks 4
+// tasks 4 	Заполните массив 10-ю иксами с помощью цикла.
+/*
+var arr = [];
+
+for (var i = 0; i < 10; i++){
+
+	arr.push('x')
+}
+console.log(arr);
+*/
+
+
+// tasks 5 	Заполните массив числами от 1 до 10 с помощью цикла.
+
+var arr = [];
+
+for (var i = 1; i <= 10; i++){
+	arr.push(i);
+}
+
+console.log(arr);

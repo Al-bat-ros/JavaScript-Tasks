@@ -111,15 +111,31 @@ document.write(sum);
 
 // tasks 11 Дан массив с числами. 
 //          С помощью цикла найдите сумму квадратов элементов этого массива.
-
+/*
 var arr = [1,2,3,4,5,6,8,11,43,121];
 var sumq = 0;
 for (var i = 0; i < arr.length; i++){
 	sumq += arr[i]*arr[i]; 
 }
 document.write(sumq);
+*/
 
 
+
+// tasks 12 Дан массив с числами. 
+//          Найдите среднее арифметическое его элементов (сумма элементов, делить на количество)
+
+var arr = [1,2,3,4,5,6,8,11,43,121];
+var sumel = 0;
+var s = 0;
+
+for (var i = 0; i < arr.length; i++){
+    s += 1;
+    sumel += arr[i];
+    // или
+}
+// var result = sum/arr.length;
+document.write(sumel/s);
 
 
 

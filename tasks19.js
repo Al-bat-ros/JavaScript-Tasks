@@ -51,12 +51,21 @@ function recNum(arr) {
 recNum(arr2);
 */
 
-var num = 123;
 
-var arr = String(num).split('');
-var sum = 0;
-for (var i = 0; i < arr.length; i++){
-        sum += Number(arr[i]);
+//var num = 123;
+function sumNumber (num){
+        
+        var arr = String(num).split('');
+            var sum = 0;
+        for (var i = 0; i < arr.length; i++){
+            sum += Number(arr[i]);
+        }
+
+        if (sum > 9){
+        	sumNumber(sum);
+        }
+        return sum;
+        
 }
 
-console.log(sum);
+console.log(sumNumber(123413521789));

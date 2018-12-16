@@ -20,5 +20,29 @@ function last(arr) {
 		last(arr);
 	}
 }
+/*
+var arr1 = [1,2,3,4,5,6,7,8,9,0];
 
-last(arr);
+function funcArrRecurs(arr){
+	document.write(arr[i]);
+	si++;
+   if 
+
+}
+
+
+funcArrRecurs(arr1);
+*/
+/*
+var arr2 = [10,20,30,40,50,60,70,80,90,100];
+
+function recNum(arr) {
+	console.log(arr.shift());
+	if (arr.length > 0){
+		recNum(arr2);
+	}
+
+}
+
+recNum(arr2);
+*/

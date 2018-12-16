@@ -57,3 +57,13 @@ console.log(arr);
   }
   console.log(arr);
   */
+
+  // tasks 7 Заполните массив 10-ю случайными числами от 1 до 10 с помощью цикла.
+
+  var arr = [];
+
+  for (var i = 0; i < 10; i++){
+  	arr[i] =Math.round(Math.random() * (10 - 1 + 1 )) + 1;
+  }
+
+  console.log(arr);

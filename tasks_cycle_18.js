@@ -98,7 +98,7 @@ console.log(arr);
 
 
 // tasks 10 Дан массив с числами. С помощью цикла найдите сумму элементов этого массива.
-
+/*
 var arr = [1,2,3,4,5,6,8,11,43,121];
 var sum = 0;
 
@@ -106,6 +106,22 @@ for (var i = 0; i < arr.length; i++){
 	sum += arr[i];
 }
 document.write(sum);
+*/
+
+
+// tasks 11 Дан массив с числами. 
+//          С помощью цикла найдите сумму квадратов элементов этого массива.
+
+var arr = [1,2,3,4,5,6,8,11,43,121];
+var sumq = 0;
+for (var i = 0; i < arr.length; i++){
+	sumq += arr[i]*arr[i]; 
+}
+document.write(sumq);
+
+
+
+
 
 
 

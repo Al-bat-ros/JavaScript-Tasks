@@ -1,6 +1,10 @@
 
-function buttonClick(elem) {
-	elem.value = 'Теперь на меня больше не нажмать';
-	elem.disabled = true;
+function buttonClick1(elem) {
+	elem.src = '2.jpg';
+	
 
+}
+
+function buttonClick2(elem) {
+	elem.src = '1.jpg';
 }

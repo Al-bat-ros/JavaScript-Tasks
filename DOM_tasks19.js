@@ -1,10 +1,6 @@
 
-function buttonClick1(elem) {
-	elem.src = '2.jpg';
-	
-
-}
-
-function buttonClick2(elem) {
-	elem.src = '1.jpg';
+function buttonClick() {
+	var elem = document.getElementById('input');
+	elem.style.color = 'red';
+	elem.style.width = '300px';
 }

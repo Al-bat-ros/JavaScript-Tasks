@@ -119,18 +119,107 @@ function go(){
 //---------------------------------------------------
 //
 // Для закрепления 2
-//
+// <p>По нажатию на кнопку в нижнем инпуте появится квадрат числа из верхнего инпута</p>
 // <input type="text" id="test" value="" placeholder="Введите число!"> 
 // <input type="text" id="result" placeholder="Здесь появится результат." disabled="">
 // <button onclick="go(this)">Нажми на меня</button>
 //
 //
+/*
 function go(){
 	var test = document.getElementById('test');
 	var value = test.value;
 	var result  = document.getElementById('result');
 	result.value = value*value; 
 }
+*/
+//-----------------------------------------------------
+//
+// Для закрепления 3
+//
+// <p>
+//	  По нажатию на кнопку в нижнем инпуте появится квадрат числа из верхнего инпута.
+//	  Если введено не число - должна показаться ошибка.
+//	</p>
+//     
+//      <input type="text" id="test" value="" placeholder="Введите число!">
+//      <br> 
+//      <br>
+//      <input type="text" id="result" placeholder="Здесь появится результат." disabled="">
+//      <br>
+//      <br>
+//      <button onclick="go(this)">Нажми на меня</button>
+//
+/*
+function go() {
+	var test = document.getElementById('test');
+	var value = test.value;
+	if (!isNaN(value)){
+	    var result = document.getElementById('result');
+	    result.value = value*value;
+	}else{
+		alert('Ваедено не число');
+	}
+}
+*/
+//--------------------------------------------------------
+//
+// Для закрепления 4
+//
+//
+/*
+function go(elem) {
+    elem.disabled = true;
+    elem.style.cursor = 'not-allowed';
+}
+*/
+//--------------------------------------------------------
+//
+//
+// Для закрепления 5
+//	<input type="text" id="textNum" value=""> 
+/*
+	<br>
+	<br>
+	<input type="submit"  onclick="num('+')" value="Я добавлю +">
+	<br>
+    <input type="submit"  onclick="num('-')" value="Я добавлю -">
+    <br>
+    <input type="submit"  onclick="num('/')" value="Я добавлю /">
+    <br>
+    <input type="submit"  onclick="num('*')" value="Я добавлю *">
+    <br>
+    <br>
+    <br>
+    <input type="submit" onclick="num('1')" value="1">
+    <br>
+    <input type="submit" onclick="num('2')" value="2">
+	<br>
+	<input type="submit" onclick="num('3')" value="3">
+	<br>
+	<input type="submit" onclick="num('4')" value="4">
+	<br>
+	<input type="submit" onclick="num('5')" value="5">
+	<br>
+	<input type="submit" onclick="num('6')" value="6">
+	<br>
+	<input type="submit" onclick="num('7')" value="7">
+	<br>
+	<input type="submit" onclick="num('8')" value="8">
+	<br>
+	<input type="submit" onclick="num('9')" value="9">
+	<br>
+	<input type="submit" onclick="num('0')" value="0">
+	<br>
+	*/
+//
+/*
+function num(elem) {
+	var text = document.getElementById('textNum');
+    text.value = text.value + elem;
+}
+*/
+//-------------------------------------------------------------------
 
 
 

@@ -73,7 +73,64 @@ function unblock() {
   	elem.value = num;
   }
  */
-
+ //----------------------------------------------------------------
+ //
+ // Задача
+ //
+ // <input type="text" id="text" value="Теперь я плавую справа">
+ // <button onclick="go(this)">Нажми на меня</button> 
+ //
+ /*
+ function go(elem) {
+ 	var text = document.getElementById('text');
+ 	text.style.cssFloat = 'right';
+ }
+ */
+//------------------------------------------------------------------
+//
+// Задача
+//
+// <input type="text" class="eee www ddd" id="text" value="Ку-ку">
+// <button onclick="go(this)">Нажми на меня</button> 
+//
+/*
+function go(elem) {
+	var text = document.getElementById('text');
+	text.value = 'Мои css классы: '+elem.className;
+}
+*/
+//------------------------------------------------
+//
+// Для закрепления 1
+//
+// <input type="text" id="input1" value="Привет!"> 
+// <input type="text" id="input2" value="Пока!">
+// <button onclick="go(this)">Нажми на меня</button>
+//
+/*
+function go(){
+	var input1 = document.getElementById('input1');
+	var input2 = document.getElementById('input2');
+	var tmp = input1.value;
+	input1.value = input2.value;
+	input2.value = tmp;
+}
+*/
+//---------------------------------------------------
+//
+// Для закрепления 2
+//
+// <input type="text" id="test" value="" placeholder="Введите число!"> 
+// <input type="text" id="result" placeholder="Здесь появится результат." disabled="">
+// <button onclick="go(this)">Нажми на меня</button>
+//
+//
+function go(){
+	var test = document.getElementById('test');
+	var value = test.value;
+	var result  = document.getElementById('result');
+	result.value = value*value; 
+}
 
 
 

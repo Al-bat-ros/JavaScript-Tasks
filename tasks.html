@@ -6,15 +6,16 @@
 		<script type="text/javascript" src="DOM_tasks19.js"></script>
 		<style> 
 		       input {
-		       	width: 340px; 
-		        margin-bottom: 20px;
+		       	width: 200px;
 		       }
 		</style>
 	</head>
 	<body>
+		<p>По нажатию на кнопку в нижнем инпуте появится квадрат числа из верхнего инпута</p>
        
-       <p>Кнопка считает кол-во нажатий по ней</p>
-       <input type="submit" onclick="go(this)" value="0">
+      <input type="text" id="test" value="" placeholder="Введите число!"> 
+      <input type="text" id="result" placeholder="Здесь появится результат." disabled="">
+      <button onclick="go(this)">Нажми на меня</button>
  
 	</body>
 </html>

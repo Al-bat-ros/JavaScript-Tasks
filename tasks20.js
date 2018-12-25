@@ -1,4 +1,7 @@
 
 function func() {
-	document.forms[1].elements[0].value = '!';
+	var elements = document.forms[1].elements;
+	for (var i = 0; i < elements.length; i++) {
+		elements[i].value = '!';
+	}
 }

@@ -50,3 +50,20 @@ function func(){
 }
 */
 //------------------------------------
+//
+// Получение свойств по их классу
+//
+//
+/*
+        <p class="www">Текст обзаца.</p>
+		<p class="www">Текст обзаца.</p>
+		<p class="www">Текст обзаца.</p>
+		<p>Текст обзаца.</p>
+        <input type="submit" onclick="func()">
+*/
+function func() {
+	var elems = document.getElementsByClassName('www');
+	for (var i = 0; i < elems.length; i++){
+		elems[i].innerHTML = '!'
+	}
+}

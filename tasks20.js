@@ -1,5 +1,7 @@
 
 function func() {
 	var elems = document.getElementsByTagName('p');
-	elems[0].innerHTML = '!';
+	for (var i = 0; i < elems.length; i++){
+		elems[i].innerHTML = '!';
+	}
 }

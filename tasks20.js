@@ -1,5 +1,4 @@
 
 function func() {
-	document.forms.form1.innerHTML = '!';
-	document.forms['form2'].innerHTML = '?';
+	document.forms[1].elements[0].value = '!';
 }

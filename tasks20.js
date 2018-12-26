@@ -61,9 +61,63 @@ function func(){
 		<p>Текст обзаца.</p>
         <input type="submit" onclick="func()">
 */
+/*
 function func() {
 	var elems = document.getElementsByClassName('www');
 	for (var i = 0; i < elems.length; i++){
 		elems[i].innerHTML = '!'
 	}
 }
+*/
+//---------------------------------------------
+//
+// Получение свойств селектором CSS
+//
+// <input type="text" value="!" class="test">
+// <input type="submit" onclick="func()">
+//
+//получаем инпут с классом test и выводим на экран содержимое его атрибута value: 
+//
+/*
+function func(){
+	var elem = document.querySelector('input.test');
+	alert(elem.getAttribute('value'));
+}
+*/
+//-------------------------------------------------
+//
+//получим свойство с id равным test
+//
+// <input type="text" value="!" id="test">
+// <input type="submit" onclick="func()">
+//
+/*
+function func() {
+	var elem = document.querySelector('#test');
+	alert(elem.getAttribute('value'));
+}
+*/
+//----------------------------------------------------
+//
+// получаем все свойства с классом www и ставим им текст '!':
+//
+//
+/*
+        <p class="www">Текст обзаца</p>
+		<p class="www">Текст обзаца</p>
+		<p class="www">Текст обзаца</p>
+		<p>Текст обзаца</p>
+        <input type="submit" onclick="func()">
+*/
+//
+/*
+function func() {
+	var elems = document.querySelectorAll('p.www');
+	
+	for (var i = 0; i < elems.length; i++){
+		elems[i].innerHTML = '!';
+	}
+	
+}
+*/
+//------------------------------------------------

@@ -152,3 +152,36 @@ function func() {
 	alert(elem.getAttribute('data-product-number'));
 }
 */
+//----------------------------------------------------
+//
+// Разница между способами получения атрибутов
+//
+//  <input type="text" id="test" value="old">
+//  <input type="submit" onclick="func()">
+//
+//При изменении свойства elem.value атрибут elem.getAttribute('value') не меняется: 
+//
+/*
+function func() {
+	var elem = document.getElementById('test');
+
+	elem.value = 'new';  //поменяли свойство
+	alert(elem.getAttribute('value')); //выведет 'old' - не изменилось!
+
+}
+*/
+//
+//А вот изменение атрибута обновляет свойство: 
+//
+/*
+function func(){
+	var elem = document.getElementById('test');
+
+	elem.getAttribute('value', 'new'); //поменяли атрибут
+	alert(elem.value); //выведет 'new' - elem.value изменилось!
+}
+*/ 
+//Получается, что атрибут elem.getAttribute('value') хранит исходное значение даже после того, 
+//как пользователь заполнил поле и свойство изменилось.
+//Например, можно взять изначальное значение из атрибута и сравнить со свойством, чтобы узнать, изменилось ли значение. 
+//А при необходимости и перезаписать свойство атрибутом, отменив изменения. 

@@ -121,3 +121,34 @@ function func() {
 }
 */
 //------------------------------------------------
+//
+//
+// Атрибуты data-
+//
+//      <div id="elem" data-price="1000" data-product-number="5">
+//			Товар Джинсы
+//		</div>
+//      <input type="submit" onclick="func()">
+//
+// обратиться к таким атрибутам как к с свойствам объекта,
+// при помощи специального свойства dataset: 
+//
+/*
+function func() {
+	var elem = document.getElementById('elem');
+
+	alert(elem.dataset.price);
+	alert(elem.dataset.productNumber);
+}
+*/
+//
+//обращаться с помощью методов типа getAttribute 
+//
+/*
+function func() {
+	var elem = document.getElementById('elem');
+
+	alert(elem.getAttribute('data-price'));
+	alert(elem.getAttribute('data-product-number'));
+}
+*/

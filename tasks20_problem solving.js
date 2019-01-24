@@ -113,3 +113,21 @@ function func(){
 }
 */
 //----------------------------------------------------------
+//
+// Задача 4
+//
+// <input type="text" value="" id="input1"> + <input type="text" value="" id="input2"> = <span id="result">?</span>
+// <br>
+// <br>
+// <input type="submit" value="Нажми чтобы сложить" onclick="func()">
+//
+/*
+function func(){
+	var input1 = document.getElementById('input1');
+    var input2 = document.getElementById('input2');
+    var result = document.getElementById('result');
+    result.innerHTML = Number(input1.value) + Number(input2.value);
+
+	}
+*/
+//----------------------------------------------------------

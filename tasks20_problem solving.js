@@ -100,3 +100,16 @@ function func(){
 }
 */
 //------------------------------------------------------
+//
+// Задача 3
+//
+// <p id="test">При нажатии на кнопку абзац станет h3, но текст останется.</p>
+// <input type="submit" value="Нажми на меня" onclick="func()">
+//
+/*
+function func(){
+	var elem = document.getElementById('test');
+	elem.outerHTML = '<h3>' + elem.innerHTML + '</h3>';
+}
+*/
+//----------------------------------------------------------

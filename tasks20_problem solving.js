@@ -168,3 +168,24 @@ function func(){
 }
 */
 //---------------------------------------------------------------
+//
+// Задача 7
+//
+//     <h2 class="www">Заголовок с классом www, не поменяется.</h2>
+//     <p class="www">Абзац с классом www.</p>
+//     <p class="www">Абзац с классом www.</p>
+//     <p class="www">Абзац с классом www.</p>
+//     <p>Просто абзац, не поменяется.</p>
+//    
+//     <button onclick="func(this)">Нажми на меня</button>
+//
+/*
+function func(){
+	var elems = document.querySelectorAll('p.www');
+	for (var i = 0; i < elems.length; i++){
+		elems[i].innerHTML = i+1;
+	}
+	console.log(elems);
+}
+*/
+//-----------------------------------------------------------------

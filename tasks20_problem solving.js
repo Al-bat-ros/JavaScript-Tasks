@@ -148,3 +148,23 @@ function func() {
 }
 */
 //-------------------------------------------------------------
+//
+// Задача 6
+//
+//     <h2 class="www">Заголовок с классом</h2>  
+//     <p class="www">Абзац с классом www</p>
+//     <p class="www">Абзац с классом www</p>
+//     <p>Просто абзац, не поменяется.</p>
+//     <button onclick="func(this)">Нажми на меня</button>  
+//
+/*
+function func(){
+    var elems = document.getElementsByClassName('www');
+
+	for (var i = 0; i < elems.length; i++){
+		elems[i].innerHTML = i+1;
+	}
+
+}
+*/
+//---------------------------------------------------------------

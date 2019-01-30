@@ -192,8 +192,41 @@ function func(){
 //
 // Задача 8
 //
+//     <p id="test" class="my-class"> Абзац с class="my-class". </p>
+//     <input type="submit" onclick="func()" value="Нажми на меня">
 //
+/*
 function func(){
 	var elem = document.getElementById('test');
 	alert(test.getAttribute('class'));
 }
+*/
+//-----------------------------------------------------------------
+//
+// Задача 9
+//
+// <p id="test" class="my-class">Абзац с class="my-class". Класс задает красный цвет. </p> 
+//
+// <input type="submit" onclick="go()" value="Нажми и я выведу класс абзаца">
+// <br>
+// <br>
+// <input type="submit" onclick="func()" value="Нажми и я удалю класс абзаца">
+/*
+function go() {
+	var elem = document.getElementById('test');
+	alert(elem.getAttribute('class'));
+}
+
+function func(){
+	var elem = document.getElementById('test');
+	elem.removeAttribute('class');
+	alert('Я удалил аттрибут сласс. Можешь проверить нажав на верхнюю клавишу');
+}
+*/
+//---------------------------------------------------------------------
+
+
+
+
+
+

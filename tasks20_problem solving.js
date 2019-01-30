@@ -189,3 +189,11 @@ function func(){
 }
 */
 //-----------------------------------------------------------------
+//
+// Задача 8
+//
+//
+function func(){
+	var elem = document.getElementById('test');
+	alert(test.getAttribute('class'));
+}

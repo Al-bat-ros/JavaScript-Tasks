@@ -247,6 +247,20 @@ function func(){
 }
 */
 //--------------------------------------------------------------------------
+//
+// Задача 11
+//
+// <input type="text" id="test" placeholder="Введи в меня текст" onkeyup="go()"><span id="input1"></span>
+//
+/*
+function go(){
+	var elem = document.getElementById('test');
+	var input = document.getElementById('input1');
+	
+	input.innerHTML = elem.value;
+}
+*/
+
 
 
 

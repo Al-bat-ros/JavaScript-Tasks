@@ -257,7 +257,32 @@ function go(){
 	var elem = document.getElementById('test');
 	var input = document.getElementById('input1');
 	
-	input.innerHTML = elem.value;
+	input.innerHTML = elem.value;s
+}
+*/
+//---------------------------------------------------------------------------
+//
+// Задача 12
+//
+//      
+/*      <a href="http://google.ru">ссылка 1</a>
+        <br>
+        <br>
+        <a href="http://mail.ru">ссылка 1</a>
+        <br>
+        <br>
+        <a href="http://vk.ru">ссылка 1</a>
+        <br>
+        <br>
+        <button onclick="go()">Нажми на меня</button>
+*/
+/*
+
+function go(){
+	var elems = document.getElementsByTagName('a');
+	for (var i = 0; i < elems.length; i++){
+	 elems[i].innerHTML = elems[i].innerHTML+'('+elems[i].getAttribute('href')+')';
+	}
 }
 */
 

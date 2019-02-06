@@ -285,6 +285,20 @@ function go(){
 	}
 }
 */
+//-------------------------------------------------------------------------------
+//
+// Задача 13
+//
+//
+function go(input) {
+	
+    input.disabled = true;
+	input.value = 'на меня больше нельзя нажать';
+	var elem = document.getElementById('test');
+	elem.innerHTML = 'Привет мир!';
+	elem.style.color = 'red';
+
+}
 
 
 

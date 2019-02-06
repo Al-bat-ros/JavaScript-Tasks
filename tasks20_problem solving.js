@@ -289,7 +289,9 @@ function go(){
 //
 // Задача 13
 //
-//
+//  <p id="test">При нажатии на кнопку текст в абзаце поменяется. </p>
+//   <input type="submit" onclick="go(this)" value="нажми на меня">
+/*
 function go(input) {
 	
     input.disabled = true;
@@ -299,6 +301,18 @@ function go(input) {
 	elem.style.color = 'red';
 
 }
+*/
+//--------------------------------------------------------------------------------
+//
+// Задание 14
+//
+function go() {
+	var elem = document.getElementsByTagName('p');
+	for (var i = 0; i < elem.length; i++){
+		elem[i].innerHTML = i;
+	}
+}
+
 
 
 

@@ -306,10 +306,30 @@ function go(input) {
 //
 // Задание 14
 //
+// 
+/* <p>Абзац с текстом.</p>        
+   <p>Абзац с текстом.</p>        
+   <p>Абзац с текстом.</p>        
+   <p>Абзац с текстом.</p>        
+   <p>Абзац с текстом.</p>        
+   <p>Абзац с текстом.</p>        
+   <p>Абзац с текстом.</p>
+   <button onclick="go()">Нажми на меня</button>
+
 function go() {
 	var elem = document.getElementsByTagName('p');
 	for (var i = 0; i < elem.length; i++){
 		elem[i].innerHTML = i;
+	}
+*/
+//---------------------------------------------------------------------------------
+// 
+// Задача 15
+//
+function go(){
+	var elems = document.getElementsByTagName('p');
+	for (var i = 0; i < elems.length; i++){
+		elems[i].innerHTML = i+'.'+elems[i].innerHTML;
 	}
 }
 

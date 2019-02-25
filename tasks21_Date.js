@@ -33,10 +33,10 @@ function go(num){
 }
  console.log(go(9));
  */
-
-
- 
- function go(text){
+ //--------------------------------------------------------
+ //        <input type="text" value="" id="text">
+ //        <input type="submit" onclick="go()">  
+ /*
  var date = new Date();
  var seconds = date.getSeconds();
  var minutes = date.getMinutes();
@@ -44,6 +44,9 @@ function go(num){
  var day = date.getDay();
  var months = date.getDay()+1;
  var year = date.getFullYear();
+ 
+ function go(text){
+ var elem = document.getElementById('text');
 
 	 if (hours <= 9){
 	 	var hours = '0' + hours;
@@ -64,8 +67,29 @@ function go(num){
 	 }
  
  var time = hours+':'+minutes+':'+seconds+' '+day+'.'+months+'.'+year;
-var elem = document.getElementById('text');
+
 elem.value = time;
 window.setInterval(go, 1000);
 }
+*/
+//------------------------------------------------------------------
+//
+//        <input type="text" value="1" id="text">
+//        <input type="submit" onclick="start()" value="start">  
+//        <input type="submit" onclick="stop()" value="stop"> 
 
+
+function start(){
+	window.timerId = setInterval(timer, 1000);
+}
+
+function stop(){
+	clearInterval(window.timerId);
+	var elem = document.getElementById('text');
+	elem.value = '0';
+}
+
+function timer(){
+   var elem = document.getElementById('text');
+   elem.value = parseInt(elem.value)+1;
+}

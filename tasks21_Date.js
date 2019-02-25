@@ -33,7 +33,10 @@ function go(num){
 }
  console.log(go(9));
  */
- function go(){
+
+
+ 
+ function go(text){
  var date = new Date();
  var seconds = date.getSeconds();
  var minutes = date.getMinutes();
@@ -42,27 +45,27 @@ function go(num){
  var months = date.getDay()+1;
  var year = date.getFullYear();
 
- if (hours <= 9){
- 	var hours = '0' + hours;
- }
+	 if (hours <= 9){
+	 	var hours = '0' + hours;
+	 }
 
- if (minutes <= 9){
- 	var minutes = '0' + minutes;  
- }
+	 if (minutes <= 9){
+	 	var minutes = '0' + minutes;  
+	 }
 
- if (seconds <= 9){
- 	var seconds = '0' + seconds;
- }
- if (day <= 9){
- 	var day = '0' + day;
- }
- if (months <= 9){
-    var months = '0' + months;
- }
-
- var time = hours+':'+minutes+':'+seconds+' '+day+'.'+months+'.'+year;
-document.write(time);
-}
-window.setInterval(go, 1000);
-
+	 if (seconds <= 9){
+	 	var seconds = '0' + seconds;
+	 }
+	 if (day <= 9){
+	 	var day = '0' + day;
+	 }
+	 if (months <= 9){
+	    var months = '0' + months;
+	 }
  
+ var time = hours+':'+minutes+':'+seconds+' '+day+'.'+months+'.'+year;
+var elem = document.getElementById('text');
+elem.value = time;
+window.setInterval(go, 1000);
+}
+

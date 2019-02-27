@@ -5,8 +5,12 @@
 		<title>JavaScript</title>
 		<script type="text/javascript" src="tasks21_Date.js"></script>
 		<style>
-		   .my-class {
-              color: red;
+		   #center{
+              text-align: center;
+		   }
+
+		   #text{
+		   	font-size: 24px;
 		   }
 
 		   input {
@@ -16,9 +20,11 @@
 
 	</head>
 	<body>
-        <input type="text" value="1" id="text">
-        <input type="submit" onclick="start()" value="start">  
-        <input type="submit" onclick="stop()" value="stop"> 
-
+		<div id="center">
+           <p id="text">0</p>
+           <input type="submit" onclick="start()" value="start">
+           <br>
+           <input type="submit" onclick="stop()" value="stop" >
+        </div>  
 	</body>
 </html>

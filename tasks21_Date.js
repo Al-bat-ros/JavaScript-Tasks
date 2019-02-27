@@ -78,7 +78,7 @@ window.setInterval(go, 1000);
 //        <input type="submit" onclick="start()" value="start">  
 //        <input type="submit" onclick="stop()" value="stop"> 
 
-
+/*
 function start(){
 	window.timerId = setInterval(timer, 1000);
 }
@@ -92,4 +92,21 @@ function stop(){
 function timer(){
    var elem = document.getElementById('text');
    elem.value = parseInt(elem.value)+1;
+}
+*/
+//---------------------------------------------------------------
+// Таймер 
+//		<div id="center">
+//           <p id="text">0</p>
+//           <input type="submit" onclick="start()" value="start">
+//        </div> 
+//
+function start(){
+	
+	window.setInterval(timer, 1000);
+}
+
+function timer(){
+	var elem = document.getElementById('text');
+	elem.innerHTML = parseInt(elem.innerHTML)+1;
 }

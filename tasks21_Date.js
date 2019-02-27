@@ -101,6 +101,7 @@ function timer(){
 //           <input type="submit" onclick="start()" value="start">
 //        </div> 
 //
+/*
 function start(){
 	
 window.timerId = setInterval(timer, 1000);
@@ -115,3 +116,31 @@ function timer(){
 	var elem = document.getElementById('text');
 	elem.innerHTML = parseInt(elem.innerHTML)+1;
 }
+*/
+//-----------------------------------------------------------------
+//
+
+function time(){
+	window.setInterval(timer, 1000);
+}
+function timer(){
+  var clock = document.getElementById('clock');
+
+  var date = new Date();
+
+  clock.innerHTML = addZero(date.getHours())+':'+addZero(date.getMinutes())+':'+addZero(date.getSeconds());
+	
+
+}
+
+function addZero(num){
+	if (num <= 9){
+		    return '0'+num;
+	}else{
+			return num;
+	}
+
+}
+
+
+

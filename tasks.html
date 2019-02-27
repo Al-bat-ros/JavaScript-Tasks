@@ -7,6 +7,7 @@
 		<style>
 		   #center{
               text-align: center;
+              font-size: 40px;
 		   }
 
 		   #text{
@@ -19,13 +20,10 @@
 		</style>
 
 	</head>
-	<body>
+	<body onload="time()">
 		<div id="center">
-           <p id="text">0</p>
-           <input type="submit" onclick="start()" value="start">
-           <br>
-           <br>
-           <input type="submit" onclick="stop()" value="stop" >
+           <p id="clock"></p>
+           
         </div>  
 	</body>
 </html>

@@ -103,7 +103,12 @@ function timer(){
 //
 function start(){
 	
-	window.setInterval(timer, 1000);
+window.timerId = setInterval(timer, 1000);
+}
+
+function stop(){
+
+    clearInterval(window.timerId);
 }
 
 function timer(){

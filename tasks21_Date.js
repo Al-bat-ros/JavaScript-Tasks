@@ -118,8 +118,13 @@ function timer(){
 }
 */
 //-----------------------------------------------------------------
+// Часы
 //
-
+//      <div id="center">
+//           <p id="clock"></p>
+           
+//        </div>
+/* 
 function time(){
 	window.setInterval(timer, 1000);
 }
@@ -141,6 +146,33 @@ function addZero(num){
 	}
 
 }
+*/
+//--------------------------------------------------------------------------
+// обратный отсчет
+//    <p id="timer">10</p>
+//      <input id="input" type="submit" onclick="start()" value="нажми на меня">
+//
+
+function start(){
+	window.timerId = window.setInterval(timer, 300)
+	document.getElementById('input').disabled = true;
+}
+function stop(){
+	window.clearInterval(window.timerId);
+}
+
+function timer(){
+	var elem = document.getElementById('timer');
+	
+	elem.innerHTML = parseInt(elem.innerHTML)-1;
+	if (elem.innerHTML == 0){
+		stop();
+		var input = document.getElementById('input');
+        input.value = 'Отсчет закончен';
+	}
+
+}
+
 
 
 

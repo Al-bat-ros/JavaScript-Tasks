@@ -152,7 +152,7 @@ function addZero(num){
 //    <p id="timer">10</p>
 //      <input id="input" type="submit" onclick="start()" value="нажми на меня">
 //
-
+/*
 function start(){
 	window.timerId = window.setInterval(timer, 300)
 	document.getElementById('input').disabled = true;
@@ -171,6 +171,33 @@ function timer(){
         input.value = 'Отсчет закончен';
 	}
 
+}
+*/
+//--------------------------------------------------------------------------
+//
+//
+
+function start(){
+	window.timerId = setInterval(go, 1000);
+}
+
+var arr = ['1.png','2.png','3.png'];
+var smil = 0;
+
+function go(){
+	
+	var img = document.getElementById('img');
+         
+         img.src = 'smiles/'+ arr[smil];
+	     smil++;
+		  
+     if (smil == arr.length ){
+          
+		  smil = 0;
+	     
+	 }
+   
+ 
 }
 
 
